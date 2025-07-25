@@ -1,9 +1,0 @@
-@EndUserText.label: '수불부 고도화 Service Definition'
-define service ZSD_InventoryLedger {
-  expose ZC_MASTER_GL             as MasterGLAccount;
-  expose ZC_MASTER_INOUTTYPE      as MasterInOutType;
-  expose ZC_MASTER_MATERIALTYPE   as MasterMaterialType;
-  expose ZC_ACTLCOST_V3           as Actlcost;
-  expose ZDD_VH_PRODUCT_V2        as VH_Product;
-  expose ZC_ChangedValuationClass as ValuationClassManagement;
-}
