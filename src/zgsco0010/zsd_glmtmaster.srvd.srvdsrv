@@ -1,6 +1,0 @@
-@EndUserText.label: '실제원가-이동평균 수불부 ServiveDefinition'
-define service ZSD_GLMTMASTER {
-  expose ZC_GLMTMASTER          as GLMTMaster;
-  expose ZI_GLMTMASTER_DISTINCT as GLMTMaster_VH;
-  expose ZC_MTCATESEG           as MaterialCateSeg;
-}
