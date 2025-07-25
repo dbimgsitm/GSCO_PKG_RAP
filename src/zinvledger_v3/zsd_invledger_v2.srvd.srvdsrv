@@ -1,8 +1,0 @@
-@EndUserText.label: '수불부 srv'
-define service ZSD_INVLEDGER_V2 {
-  expose ZDD_ACMVCITEM_V2            as INVLEDGER_V2;
-  expose I_CompanyCodeStdVH          as VH_Company;
-  expose I_PlantStdVH                as VH_Plant;
-  expose ZDD_VH_PRODUCT_V2           as VH_Product;
-  expose ZC_CHANGEDVALUATIONCLASS_V2 as ValuationClassManagement_V2;
-}
