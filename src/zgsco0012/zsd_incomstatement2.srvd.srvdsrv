@@ -1,0 +1,5 @@
+@EndUserText.label: '손익계산서(수불연동) Service Definition'
+define service ZSD_INCOMSTATEMENT2 {
+  expose ZC_IncomeStatement as Main;
+  expose I_CompanyCodeStdVH as VH_Company;
+}

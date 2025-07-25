@@ -1,0 +1,16 @@
+managed implementation in class zbp_i_mtcateseg unique;
+strict ( 2 );
+
+define behavior for ZI_MTCATESEG alias MTCateSeg
+with unmanaged save
+//persistent table ztgsco0050
+lock master
+authorization master ( instance )
+etag master LastChangedAt
+{
+  create;
+  update;
+  delete;
+  field ( readonly, numbering : managed ) Id;
+  field ( readonly ) CreateBy, CreateAt, LastChangedBy, LastChangedAt;
+}

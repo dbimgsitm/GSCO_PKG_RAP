@@ -1,0 +1,24 @@
+CLASS zcl_delete_tempdata DEFINITION
+  PUBLIC
+  FINAL
+  CREATE PUBLIC .
+
+  PUBLIC SECTION.
+    INTERFACES if_oo_adt_classrun.
+  PROTECTED SECTION.
+  PRIVATE SECTION.
+ENDCLASS.
+
+
+
+CLASS ZCL_DELETE_TEMPDATA IMPLEMENTATION.
+
+
+    METHOD if_oo_adt_classrun~main.
+        DELETE FROM ztgsco0090. "#EC CI_NOWHERE
+        COMMIT WORK.
+
+        out->write( '삭제됨' ).
+
+    ENDMETHOD.
+ENDCLASS.

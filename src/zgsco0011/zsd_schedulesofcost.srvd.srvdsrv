@@ -1,0 +1,6 @@
+@EndUserText.label: '제조원가명세서 Service Definition'
+define service ZSD_SCHEDULESOFCOST {
+  expose ZC_SCHEDULESOFCOST  as Main;
+  expose ZC_MTCLASS_MATERIAL as MasterMT;
+  expose I_CompanyCodeStdVH  as VH_Company;
+}

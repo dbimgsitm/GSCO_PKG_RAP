@@ -1,0 +1,17 @@
+managed implementation in class zbp_i_master_mtclass unique;
+strict ( 2 );
+
+define behavior for ZI_MASTER_MTCLASS alias MasterMTC
+with unmanaged save
+//persistent table ztgsco0060
+lock master
+authorization master ( instance )
+etag master LastChangedAt
+{
+  create;
+  update;
+  delete;
+  field ( readonly, numbering : managed ) Id;
+  field ( readonly ) CreateBy, CreateAt, LastChangedBy, LastChangedAt;
+
+}

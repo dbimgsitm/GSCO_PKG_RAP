@@ -1,0 +1,5 @@
+@EndUserText.label: '제조원가명세서 srv'
+define service ZSD_MFGCOSTREPORT2 {
+  expose ZDD_CF_MFGCOST2    as Main;
+  expose I_CompanyCodeStdVH as VH_Company;
+}

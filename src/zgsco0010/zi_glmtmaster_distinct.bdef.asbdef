@@ -1,0 +1,16 @@
+managed implementation in class zbp_i_glmtmaster_distinct unique;
+strict ( 2 );
+
+define behavior for ZI_GLMTMASTER_DISTINCT alias GLMTMaster
+with unmanaged save
+//persistent table ztgsco0040
+lock master
+authorization master ( instance )
+etag master LastChangedAt
+{
+  create;
+  update;
+  delete;
+  field ( readonly, numbering : managed ) Id;
+  field ( readonly ) CreateBy, CreateAt, LastChangedBy, LastChangedAt;
+}
